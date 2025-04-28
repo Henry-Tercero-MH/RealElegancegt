@@ -13,30 +13,32 @@
 
 <body>
   <!-- Contenedor flotante -->
-  <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1050;" class="d-flex flex-column gap-2">
+  <div class="boton-flotante d-flex flex-column gap-2">
 
     <!-- WhatsApp -->
     <a href="https://wa.me/50230745202" target="_blank" class="btn btn-success rounded-circle shadow">
-      <i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
+      <i class="bi bi-whatsapp"></i>
     </a>
 
     <!-- Facebook -->
     <a href="https://www.facebook.com/TrajesRealEleganceGt/" target="_blank"
       class="btn btn-primary rounded-circle shadow">
-      <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+      <i class="bi bi-facebook"></i>
     </a>
 
     <!-- Instagram -->
     <a href="https://www.instagram.com/realelegancegt/" target="_blank" class="btn btn-danger rounded-circle shadow">
-      <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+      <i class="bi bi-instagram"></i>
     </a>
 
     <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/youssef-gonzalez-6b2a66170" target="_blank"
       class="btn btn-primary rounded-circle shadow">
-      <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+      <i class="bi bi-linkedin"></i>
     </a>
+
   </div>
+
   <!-- Contenedor de la página -->
   <div id="navbar-container"></div>
   <div id="banner-container"></div>
@@ -270,16 +272,17 @@
       <div class="col-md-6 mb-2">
         <input type="text" id="buscador" class="form-control" placeholder="Buscar por nombre o descripción...">
       </div>
-      <div class="col-md-8 text-center">
-        <div class="btn-group" role="group" aria-label="Categorías">
-          <button type="button" class="btn btn-outline-secondary active" data-categoria="todos">Todos</button>
-          <button type="button" class="btn btn-outline-secondary" data-categoria="trajes">Trajes</button>
-          <button type="button" class="btn btn-outline-secondary" data-categoria="blazers">Blazers</button>
-          <button type="button" class="btn btn-outline-secondary" data-categoria="camisas">Camisas</button>
-          <button type="button" class="btn btn-outline-secondary" data-categoria="chalecos">Chalecos</button>
-          <button type="button" class="btn btn-outline-secondary" data-categoria="zapatos">Zapatos</button>
+      <div class="col-12 col-md-8 text-center my-3">
+        <div class="btn-group d-flex flex-wrap" role="group" aria-label="Categorías">
+          <button type="button" class="btn btn-outline-secondary flex-fill active" data-categoria="todos">Todos</button>
+          <button type="button" class="btn btn-outline-secondary flex-fill" data-categoria="trajes">Trajes</button>
+          <button type="button" class="btn btn-outline-secondary flex-fill" data-categoria="blazers">Blazers</button>
+          <button type="button" class="btn btn-outline-secondary flex-fill" data-categoria="camisas">Camisas</button>
+          <button type="button" class="btn btn-outline-secondary flex-fill" data-categoria="chalecos">Chalecos</button>
+          <button type="button" class="btn btn-outline-secondary flex-fill" data-categoria="zapatos">Zapatos</button>
         </div>
       </div>
+
     </div>
 
     <div class="row g-4" id="catalogo">

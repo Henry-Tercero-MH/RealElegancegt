@@ -8,13 +8,43 @@
 }
 .navbar-brand img {
   width: 100px;
-  height: 60px;
+  height: 75px;
 }
+/* Ajustar la altura del carrusel y centrar bien el contenido */
+#bannerCarrusel .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  #bannerCarrusel .carousel-caption {
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  #bannerCarrusel h1,
+  #bannerCarrusel p {
+    font-size: 1.2rem !important;
+  }
+
+  #bannerCarrusel h1 {
+    font-size: 1.5rem !important;
+  }
+
+  #bannerCarrusel .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
 body {
-  background-color: rgba(251, 251, 250, 0.338);
+  /* background-color: rgba(251, 251, 250, 0.338); */
 }
 .navbar {
-  height: 15vh;
+  height: 17vh;
   background-color: black;
   color: white;
   font-size: 1.5rem;
@@ -69,7 +99,7 @@ footer {
   font-size: 1.25rem;
   padding: 20px;
   text-align: center;
-  height: 45vh;
+  height: 100%;
 }
 footer {
   background-color: #000000;
@@ -79,7 +109,6 @@ footer {
   font-family: Georgia, serif;
   font-size: 1.25rem;
   background-color: #0b0b0bcf;
-
   padding: 20px;
   text-align: center;
   border-radius: 1rem;
@@ -107,9 +136,13 @@ footer {
 }
 
 .card-body:hover {
-  background-color: #050505f6; /* Celeste cristal */
-  color: #0c0c0c;
-  font-weight: bold;
+  background-color: #050505; /* Celeste cristal */
+  color: #fcf8f8;
+  border-radius: 5%;
+}
+.card-body p:hover {
+  background-color: #050505; /* Celeste cristal */
+  color: #fcf8f8;
 }
 .cajaMenu {
   margin-top: 10px;
@@ -118,4 +151,109 @@ footer {
 }
 .cajaMenu ul {
   padding: 20px;
+}
+/* Footer general */
+#footer {
+  background-color: #212529; /* Fondo oscuro */
+}
+
+/* Caja del contenido */
+#footer .caja-footer {
+  padding: 20px 0;
+}
+
+/* Estilos de los encabezados del footer */
+#footer h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Listas de enlaces en el footer */
+#footer ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Texto general en el footer */
+#footer p {
+  font-size: 1rem;
+}
+
+/* Estilo de la imagen circular */
+#footer .rounded-circle {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilo del texto del autor */
+#footer .d-flex.align-items-center.gap-2 p {
+  font-size: 0.95rem;
+}
+
+/* ----------- Responsividad para móviles ----------- */
+@media (max-width: 576px) {
+  #footer .caja-footer {
+    padding: 0 10px;
+  }
+
+  #footer h5 {
+    font-size: 1.2rem;
+  }
+
+  #footer ul li {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  #footer p {
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  #footer .rounded-circle {
+    width: 35px;
+    height: 35px;
+  }
+
+  #footer .d-flex.align-items-center.gap-2 p {
+    font-size: 0.85rem;
+    align-items: left;
+  }
+}
+/* Botones flotantes estilo general */
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+}
+
+.boton-flotante a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Iconos más grandes */
+.boton-flotante i {
+  font-size: 1.5rem;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 576px) {
+  .boton-flotante {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .boton-flotante a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .boton-flotante i {
+    font-size: 1.3rem;
+  }
 }
